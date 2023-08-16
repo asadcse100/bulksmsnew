@@ -1,0 +1,168 @@
+{
+    "banner": {
+        "builder": true,
+        "name": "Banner Section",
+        "fixed_content": {
+            "images":{
+                "background_image":{
+                    "size":"3000x2000"
+                },
+                "banner_image":{
+                    "size":"3500x1740"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text",
+            "btn_name": "text",
+            "btn_url": "text",
+            "video_btn_name": "text",
+            "video_url": "text"
+        },
+        "element_content": {
+            "images":{
+                "client_image":{
+                    "size":"134x80"
+                }
+            }
+        }
+    },
+    "about": {
+        "builder": true,
+        "name": "About Section",
+        "fixed_content": {
+            "images":{
+                "about_image":{
+                    "size":"2230x1250"
+                }
+            },
+            "title": "text",
+            "heading": "text",
+            "sub_heading": "text",
+            "btn_name": "text",
+            "btn_url": "text"
+        },
+        "element_content": {
+            "icon": "icon",
+            "title": "text",
+            "sub_title": "text"
+        }
+    },
+    "feature": {
+        "builder": true,
+        "name": "Feature Section",
+        "fixed_content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element_content": {
+            "title": "text",
+            "description": "textarea",
+            "feature_icon": "icon",
+            "btn_name": "text",
+            "btn_url": "text"
+        }
+    },
+    "cta": {
+        "builder": true,
+        "name": "CTA Section",
+        "fixed_content": {
+            "images":{
+                "cta_image":{
+                    "size":"3900x2825"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element_content": {
+            "title": "text",
+            "description": "text",
+            "images":{
+                "card_image":{
+                    "size":"96x96"
+                }
+            }
+        }
+    },
+    "over_view": {
+        "builder": true,
+        "name": "Overview Section",
+        "fixed_content": {
+            "images":{
+                "overview_image":{
+                    "size":"1910x910"
+                },
+                "overview_min_image":{
+                    "size":"800x510"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text",
+            "btn_left_name": "text",
+            "btn_left_url": "text",
+            "btn_right_name": "text",
+            "btn_right_url": "text"
+        }
+    },
+    "pricing_plan": {
+        "builder": true,
+        "name": "Pricing Plan Section",
+        "fixed_content": {
+            "heading": "text",
+            "sub_heading": "text"
+        }
+    },
+    "faq": {
+        "builder": true,
+        "name": "FAQ Section",
+        "fixed_content": {
+            "heading": "text",
+            "sub_heading": "text",
+            "images":{
+                "background_image":{
+                    "size":"815x675"
+                }
+            }
+        },
+        "element_content": {
+            "question": "text",
+            "answer": "text"
+        }
+    },
+    "policy_pages": {
+        "builder": true,
+        "name": "Policy Pages",
+        "element_content": {
+            "title": "text",
+            "details": "textarea"
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "name": "Social Icons",
+        
+        "element_content": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text"
+        }
+    },
+    "footer": {
+        "builder": true,
+        "name": "Footer Section",
+        "fixed_content": {
+            "text": "text",
+            "sub_text": "text",
+            "copyright_text": "text",
+            "images":{
+                "overview_image":{
+                    "size":"3385x970"
+                } ,
+                "overview_transparent_image":{
+                    "size":"1910x910"
+                }
+
+            }
+        }
+    }
+}

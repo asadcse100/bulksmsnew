@@ -1,0 +1,10 @@
+@extends('frontend.layouts.main')
+@section('content')
+    @include('sections.banner')
+    @include('sections.about')
+    @include('sections.feature')
+    @include('sections.cta')
+    @include('sections.faq') 
+    @include('sections.overview')
+    @include('sections.pricing_plan')
+@endsection

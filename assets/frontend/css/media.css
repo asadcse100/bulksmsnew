@@ -1,0 +1,334 @@
+@media only screen and (min-width: 320px) {
+
+  .pt-100{
+    padding-top: 70px;
+  }
+  .pb-100{
+    padding-bottom: 70px;
+  }
+  .mt-100{
+    margin-top: 70px;
+  }
+  .mb-100{
+    margin-bottom: 70px;
+  }
+
+  .banner {
+    padding: 120px 0;
+  }
+  .section-title {
+    width: 100%;
+  }
+  .section-title > h3 {
+    font-size: 20px;
+  }
+
+  /* =====================================
+        Mobile And Header menu Start
+  ===================================== */
+  .header {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+  }
+  .show-main-nav {
+    height: 100vh;
+    width: 100%;
+  }
+  .main-nav-overlay {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .nav-menu-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    width: 320px;
+    background-color: var(--neutral-1);
+    transition: 0.5s;
+    transform: translateX(-370px);
+    gap: 25px;
+    z-index: 1;
+  }
+  .show-menu-wrap {
+    transform: translateX(0);
+  }
+  .mobile-site-logo {
+    width: 100px;
+  }
+  .nav-menu {
+    display: block;
+    width: 100%;
+  }
+  .nav-menu ul {
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .nav-menu ul > li > a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .close-sidebar {
+    width: 30px;
+    aspect-ratio: 1/1;
+    font-size: 24px;
+    line-height: 1;
+    border: 1px solid var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-4);
+  }
+  /* =============Business grow section Start============= */
+  .grow-img {
+    position: relative;
+    z-index: 2;
+  }
+  .grow-right-bg {
+    z-index: 1;
+  }
+  /* =============Choose us section Start============= */
+  .choose-middel-test {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  /* =============Pricing section Start============= */
+  .price-tab {
+    width: 280px;
+    margin-bottom: 40px !important;
+  }
+  .pricing-item-two {
+    transform: translateY(0);
+  }
+  /* =============Faqs section Start============= */
+
+  /* ===========Getting-start Section start=========== */
+  /* .get-start {
+    height: 555px;
+  } */
+  .get-start-dash {
+    width: 100%;
+  }
+  .get-start-dash-sm {
+    width: 150px;
+    top: 60%;
+    right: -5%;
+  }
+
+  .go-to-dashboard-link {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  /* ===========Why Choose Section=========== */
+  .model-img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+
+  .pt-100{
+    padding-top: 80px;
+  }
+  .pb-100{
+    padding-bottom: 80px;
+  }
+  .mt-100{
+    margin-top: 80px;
+  }
+  .mb-100{
+    margin-bottom: 80px;
+  }
+
+  .banner {
+    padding: 100px 0;
+  }
+
+  .section-title > h3 {
+    font-size: 30px;
+  }
+  /* =============Business grow section Start============= */
+
+  /* =============Getting-start section Start============= */
+  /* .get-start {
+    height: 500px;
+  } */
+  .get-start-dash {
+    width: 80%;
+  }
+  .get-start-dash-sm {
+    width: 230px;
+    top: 25%;
+    right: -15%;
+  }
+
+  .getaway-img {
+    width: 100px;
+  }
+
+  /* ==========Why choose section========== */
+  .choose-middel-test {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .banner-left h1{
+    font-size: 55px;
+  }
+
+  .banner_img img{
+    max-width: 120%;
+  }
+
+  .footer-top{
+    padding: 90px 0;
+  }
+  .footer-bottom{
+    padding: 15px 0;
+  }
+  .pt-100{
+    padding-top: 100px;
+  }
+  .pb-100{
+    padding-bottom: 100px;
+  }
+  .mt-100{
+    margin-top: 100px;
+  }
+  .mb-100{
+    margin-bottom: 100px;
+  }
+  .price-tab {
+    width: 350px;
+    margin-bottom: 45px !important;
+  }
+  .pricing-item-two {
+    transform: translateY(-15px);
+  }
+
+  /* =====================================
+        Mobile And Header menu Start
+  ===================================== */
+  .header {
+    padding: 25px 0;
+  }
+  .main-nav {
+    position: unset;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    top: unset;
+    left: unset;
+  }
+  .nav-menu-wrap {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    height: 100%;
+    width: fit-content;
+    transform: translateX(0);
+    background: transparent;
+    position: unset;
+    gap: 20px;
+    transition: 0s;
+  }
+  .mobile-site-logo {
+    display: none;
+  }
+  .nav-menu ul {
+    flex-direction: row;
+  }
+  .nav-menu ul > li > a {
+    display: inline-block;
+    padding: 0 25px;
+    width: fit-content;
+  }
+
+  /* ==========Geting-Start  section Start========== */
+  .get-start-content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .get-start {
+    height: 570px;
+  } */
+  .get-start-dash {
+    width: 75%;
+  }
+  .get-start-dash {
+    filter: drop-shadow(2.5px 2.5px 5px #5353536e);
+  }
+
+
+  .get-start-dash-sm {
+    width: 250px;
+  }
+  /* =========Why choose Section========= */
+  .choose-middel-test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+  }
+  .model-img {
+    width: 75%;
+  }
+
+  .go-to-dashboard-link {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner {
+    padding: 190px 0;
+  }
+  /* =============Choose us section Start============= */
+  .choose-middel-test {
+    width: 45%;
+  }
+  .model-img {
+    width: 50%;
+  }
+  /* ==========Geting-Start  section Start========== */
+  .get-start-dash-sm {
+    width: 300px;
+    top: 25%;
+    right: -20%;
+  }
+  /* .get-start {
+    height: 690px;
+  } */
+
+  /* ==========Faqs  section Start========== */
+  .faq .faq-accordion .accordion-button {
+    font-size: 18px;
+    padding: 20px;
+  }
+}

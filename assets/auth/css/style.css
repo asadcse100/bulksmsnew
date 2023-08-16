@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stick+No+Bills:wght@500;600;700;800&display=swap");
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  /* font-family: 'Stick No Bills', sans-serif; */
+}
+.btn--info {
+  color: #fff;
+  background-color: #03115b;
+  border-color: #03115b;
+}
+.or {
+  position: relative;
+}
+.or:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 48%;
+  right: 55%;
+  width: 120px;
+  background-color: rgb(187, 171, 171);
+}
+.or:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 48%;
+  left: 55%;
+  width: 120px;
+  background-color: rgb(187, 171, 171);
+}
+
+.menu-search {
+  color: #fff;
+  background: rgb(255 255 255/10%)!important;
+}
+
+.menu-search:focus {
+  color: #fff;
+  background: rgb(255 255 255/10%)!important;
+}
+
+.btn--primary {
+  background: linear-gradient(34deg, rgba(2,25,200,1) 31%, rgba(240,1,70,1) 98%);
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  overflow: hidden;
+}
+
+.btn--primary:hover{
+  color: #fff;
+}
+.btn--primary:hover::after{
+  opacity: 1;
+}
+.btn--primary::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-75deg, rgba(2,25,200,1) 31%, rgba(240,1,70,1) 98%);
+  transition: 0.55s ease;
+  opacity: 0;
+}
+
+
+/** template css here */
+.template-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.template:hover::before, .template:hover .overlay-caption {
+  opacity: 1;
+}
+
+.template {
+  position: relative;
+  text-align: center;
+  color: #012970;
+  transition: all 0.4s;
+}
+
+.d-flex-sms {
+  display: flex!important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.template .overlay-caption {
+  transition: all 1s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgb(56 69 75 / 47%);
+  padding: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollable-auto {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: #11a683 !important;
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+  border: none;
+  padding: 10px 0 !important;
+}
+
+/** template css here */
+
+.login-page-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.login-left-section {
+  height: 100vh;
+  position: relative;
+}
+.login-right-section {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.bg-purple {
+  background: #03115b;
+}
+.responsive-padding {
+  padding: 10rem;
+}
+.users {
+  display: flex;
+  align-items: center;
+}
+.user {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -20px;
+  border: 7px solid #6f42c1;
+}
+.z-3 {
+  z-index: 5;
+}
+.google-img {
+  width: 20px;
+}
+.form-container {
+  width: 390px;
+}
+.only-big-screen {
+  display: block;
+}
+.only-small-screen {
+  display: none;
+}
+input:focus {
+  outline: none;
+}
+.site--title{
+  color: #6f42c1;
+}
+.google--login{
+  background-color: #fbbc05;
+}
+ 
