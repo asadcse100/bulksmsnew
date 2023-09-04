@@ -5,27 +5,27 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^7.1|^8.1",
+        "php": "^7.1|^8.0",
         "ext-json": "*",
         "ezyang/htmlpurifier": "*",
         "firebase/php-jwt": "6.8.1",
         "guzzlehttp/guzzle": "^7.2",
-        "intervention/image": "*",
+        "intervention/image": "^2.7",
         "laravel/framework": "^10.10",
-        "laravel/passport": "^11.8",
         "laravel/sanctum": "^3.2",
-        "laravel/socialite": "*",
+        "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.8",
+        "laravel/ui": "*",
         "league/oauth2-server": "*",
-        "maatwebsite/excel": "*",
-        "messagebird/php-rest-api": "*",
+        "maatwebsite/excel": "^3.1",
+        "messagebird/php-rest-api": "^3.1",
         "paypal/rest-api-sdk-php": "*",
         "razorpay/razorpay": "2.*",
         "sendgrid/sendgrid": "~7",
-        "shuchkin/simplexlsx": "*",
-        "stripe/stripe-php": "*",
+        "shuchkin/simplexlsx": "^1.0",
+        "stripe/stripe-php": "^8.5",
         "textmagic/sdk": "dev-master",
-        "twilio/sdk": "*",
+        "twilio/sdk": "^6.37",
         "vonage/client": "*"
     },
     "require-dev": {
@@ -42,7 +42,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files":[
+            "app//Http//Helper//helper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

@@ -20,11 +20,13 @@
 
                     </h6>
                     <div class="customer-slider">
+                        @if(!empty($banner_element))
                         @foreach($banner_element as $element)
                             <span>
                                 <img src="{{showImage(filePath()['frontend']['path'].'/'. @getArrayValue(@$element->section_value, 'client_image'),'134x40')}}" alt="">
                             </span>
                         @endforeach
+                        @endif
                     </div>
 
                 </div>
@@ -37,3 +39,5 @@
         </div>
     </div>
 </div>
+
+

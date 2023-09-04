@@ -22,7 +22,7 @@
                     @endif
                 </div>
 
-                <form action="{{route('login.store')}}" method="POST">
+                <form action="{{route('user.authenticate')}}" method="POST">
                     @csrf
                     <div class="my-3">
                         <label for="user" class="form-label d-block">{{ translate('Email address')}}</label>

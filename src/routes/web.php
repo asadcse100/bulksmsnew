@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\AuthorizationProcessController;
 use App\Http\Controllers\User\AndroidApiController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\NewPasswordController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\User\EmailApiGatewayController;
 use App\Http\Controllers\User\SmsApiGatewayController;
 use App\Http\Controllers\User\WhatsappDeviceController;
@@ -29,6 +32,7 @@ use App\Http\Controllers\PaymentMethod\CoinbaseCommerce;
 use App\Http\Controllers\User\CampaignController;
 use App\Http\Controllers\User\EmailTemplateController;
 use App\Http\Controllers\User\ManageWhatsappController;
+
 
 Route::get('queue-work', function () {
     return Illuminate\Support\Facades\Artisan::call('queue:work', ['--stop-when-empty' => true]);
@@ -323,7 +327,7 @@ Route::middleware(['auth','checkUserStatus','maintenance','demo.mode'])->prefix(
     });
 });
 
-Route::get('/', [WebController::class, 'index'])->name('home');
+Route::get('/home', [WebController::class, 'index'])->name('home');
 
 Route::get('/pages/{key}/{id}', [WebController::class, 'pages'])->name('page');
 Route::get('/language/change/{lang?}', [FrontendController::class, 'languageChange'])->name('language.change');
@@ -334,3 +338,16 @@ Route::get('demo/file/download/{extension}', [FrontendController::class, 'demoFi
 Route::get('demo/email/file/download/{extension}', [FrontendController::class, 'demoEmailFileDownloader'])->name('demo.email.file.downlode');
 Route::get('demo/whatsapp/file/download/{extension}', [FrontendController::class, 'demoWhatsAppFileDownloader'])->name('demo.whatsapp.file.downlode');
 Route::get('api/document', [FrontendController::class, 'apiDocumentation'])->name('api.document');
+
+Route::get('/', [LoginController::class, 'showLogin'])->name('login');
+Route::post('authenticate', [LoginController::class, 'authenticate'])->name('user.authenticate');
+Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('forgot-password', [NewPasswordController::class, 'create'])->name('password.request');
+Route::post('password/email', [NewPasswordController::class, 'store'])->name('password.email');
+Route::get('password/verify/code', [NewPasswordController::class, 'passwordResetCodeVerify'])->name('password.verify.code');
+Route::post('password/code/verify', [NewPasswordController::class, 'emailVerificationCode'])->name('email.password.verify.code');
+Route::get('reset-password/{token}', [ResetPasswordController::class, 'create'])->name('password.reset');
+Route::post('reset/password', [ResetPasswordController::class, 'store'])->name('password.reset.update');
+Route::get('user/create', [RegisteredUserController::class, 'create'])->name('register');
+Route::post('register/store', [RegisteredUserController::class, 'store'])->name('register.store');

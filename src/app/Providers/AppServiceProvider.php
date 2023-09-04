@@ -17,7 +17,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str; 
+use Illuminate\Support\Str;
 use Exception;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      * @return void
      */
-    public function register()
-    {
-
-    }
+    // public function register()
+    // {
+    //     Passport::ignoreRoutes();
+    // }
 
     /**
      * Bootstrap any application services.
@@ -63,7 +63,7 @@ class AppServiceProvider extends ServiceProvider
 
         try {
             DB::connection()->getPdo();
-            Passport::routes();
+            // Passport::routes();
             Paginator::useBootstrap();
 
             $view['general'] = GeneralSetting::first();
